@@ -1,0 +1,8 @@
+<!doctype html>
+<html lang="pt-BR"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#0a0907"><title>Pedidos | Culto Salgados</title><link rel="icon" href="assets/logo.jpeg"><link rel="stylesheet" href="style.css"></head>
+<body><header class="topbar"><a class="brand" href="#topo"><img src="assets/logo.jpeg" alt="Logo Culto Salgados"><span>CULTO <b>SALGADOS</b><small>PAINEL DE PEDIDOS</small></span></a><button id="refresh" class="outline-button">↻ Atualizar</button></header>
+<main id="topo" class="main"><div class="intro"><span class="eyebrow">ACOMPANHAMENTO DE PEDIDOS</span><h1>Pedidos <em>Culto Salgados</em></h1><p>Os pedidos aparecem aqui quando são enviados pelo cardápio.</p></div>
+<div class="summary"><div><span>Pendentes</span><strong id="pending-count">0</strong></div><div><span>Entregues</span><strong id="delivered-count">0</strong></div><div><span>Cancelados</span><strong id="cancelled-count">0</strong></div></div>
+<div class="toolbar"><label for="filter">Mostrar</label><select id="filter"><option value="active">Pendentes</option><option value="all">Todos os pedidos</option><option value="pendente">Somente pendentes</option><option value="entregue">Somente entregues</option><option value="cancelado">Somente cancelados</option></select><span id="connection" role="status">Conectando ao Firebase…</span></div>
+<div id="orders" class="orders-grid"><div class="empty">Carregando pedidos…</div></div>
+</main><footer>© <span id="year"></span> Culto Salgados · Painel público de pedidos</footer><script type="module" src="app.js"></script></body></html>
